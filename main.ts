@@ -1,0 +1,18 @@
+for (let index = 0; index < 100; index++) {
+    pins.digitalWritePin(DigitalPin.P1, 1)
+    music.playMelody("E - - E - - E - ", 120)
+    basic.pause(4000)
+    pins.digitalWritePin(DigitalPin.P1, 0)
+    music.stopAllSounds()
+    basic.pause(0)
+    pins.digitalWritePin(DigitalPin.P2, 1)
+    basic.pause(1000)
+    pins.digitalWritePin(DigitalPin.P2, 0)
+    basic.pause(0)
+    pins.digitalWritePin(DigitalPin.P8, 1)
+    basic.pause(5000)
+    pins.digitalWritePin(DigitalPin.P8, 0)
+    pins.digitalWritePin(DigitalPin.P2, 1)
+    basic.pause(1000)
+    pins.digitalWritePin(DigitalPin.P2, 0)
+}
